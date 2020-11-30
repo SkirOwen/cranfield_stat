@@ -1,3 +1,3 @@
 # cranfield_stat
 
-This is a polished version and commented of the code used for the assignment
+This is a complete version and commented of the code used for the assignment
