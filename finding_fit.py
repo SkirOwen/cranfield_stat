@@ -1,11 +1,14 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import seaborn as sns
 
 from mpl_toolkits.mplot3d import Axes3D
 
 
 df = pd.read_csv("train_selected.csv")
+df = df.drop(columns=["id"])
+
 
 test = pd.read_csv("test_selected.csv")
 real_value = pd.read_csv("PM_truth.txt", names=["ttf"])
@@ -19,8 +22,16 @@ y = df["ttf"]
 # plt.show()
 
 # 3D
-fig = plt.figure()
-ax = Axes3D(fig)
+# fig = plt.figure()
+# ax = Axes3D(fig)
+#
+# ax.scatter(X.iloc[:, 1], X.iloc[:, 2], y)
+# plt.show()
 
-ax.scatter(X.iloc[:, 1], X.iloc[:, 2], y)
+sns.pairplot(df, hue="label_bnc")
+
+# g = sns.PairGrid(df, hue='label_bnc')
+# g.map_diag(sns.kdeplot)
+# g.map_offdiag(sns.scatterplot)
+# g.add_legend()
 plt.show()
