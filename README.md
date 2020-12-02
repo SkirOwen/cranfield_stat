@@ -7,4 +7,4 @@ This is a complete version and commented of the code used for the assignment.
 `finding_fit.py` is to some test to get the feel for the database, as well as trying different re-scalling of y (ttf) to
  get a linear relationship with the different x values.  
  
- 
+ `main.py` is for the other regression and classification; look at line `22`to change the variables.
