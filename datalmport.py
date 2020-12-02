@@ -2,6 +2,11 @@ import numpy as np
 import pandas as pd
 import os
 
+"""
+Ignore this file, this was an attempt to translate the matlab code into python, but while doing so I realise
+that python already has the tools built-in to do it.
+"""
+
 
 def dataImport(dirName, isPlot, EID=1):
     # Training dataset
