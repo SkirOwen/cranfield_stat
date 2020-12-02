@@ -5,6 +5,11 @@ import seaborn as sns
 
 from mpl_toolkits.mplot3d import Axes3D
 
+"""
+The purpose of this file is just to mess around to get an idea of the data I'll be dealing with.
+
+Uncomment what you want
+"""
 
 df = pd.read_csv("train_selected.csv")
 df = df.drop(columns=["id"])
